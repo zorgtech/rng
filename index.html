@@ -6,9 +6,22 @@
      
 <h1>A Sudo-Random Number Generator</h1><br>
 
-Seed Number: <input type="number" id="seed1" name="Seed1"> - Can be any number! This is Required!<br>
-Seed Number 2: <input type="number" id="seed2" name="Seed2"> - Can be any number! This is Required!<br>
-
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="number" id="seed1" name="Seed1"> - Can be any number! This is Required!<br>
+          <label for="icon_prefix">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input type="number" id="seed2" name="Seed2"> - Can be any number! This is Required!<br>
+          <label for="icon_telephone">Telephone</label>
+        </div>
+      </div>
+    </form>
+  </div>
 <button type="button" onclick="getNumber()">Click Me For A Random Number!</button>
 <br>
 <table id="myTable">
