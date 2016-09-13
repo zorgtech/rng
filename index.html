@@ -1,16 +1,17 @@
 <h1>A Sudo-Random Number Generator</h1><br>
 
-Highest Number: <input type="number" id="highest" name="Highest"><br>
+Seed Number: <input type="number" id="seed1" name="Seed1"> - Can be any number! This is Required!<br>
+Seed Number 2: <input type="number" id="seed2" name="Seed2"> - Can be any number! This is Required!<br>
 
 <button type="button" onclick="getNumber()">Click Me For A Random Number!</button>
 <br>
 <table id="myTable">
 </table>
 <script>
-
 function getNumber() {
-var highest = document.getElementById("highest").input
-var num =  (3232*(3232*(new Date).getTime()+9323)%10+9323)%highest;
+var seed1 = document.getElementById("seed1").value;
+var seed2 = document.getElementById("seed2").value;
+var num =  (323265464356749587598047590834750938753045394857309845709384570394857230985730986745096734095*(3534534648746348577777774056859345035856025353453523536486503435455*(new Date).getTime()*seed2+65464356344586487646735487256732628727854287)%seed1)%seed1;
  var table = document.getElementById("myTable");
     var row = table.insertRow(0);
     var cell1 = row.insertCell(0);
