@@ -1,0 +1,20 @@
+<h1>A Sudo-Random Number Generator</h1><br>
+
+Highest Number: <input type="number" id="highest" name="Highest"><br>
+
+<button type="button" onclick="getNumber()">Click Me For A Random Number!</button>
+<br>
+<table id="myTable">
+</table>
+<script>
+
+function getNumber() {
+var highest = document.getElementById("highest").input
+var num =  (3232*(3232*(new Date).getTime()+9323)%10+9323)%highest;
+ var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = num;
+}
+</script>
